@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap");
+@keyframes FundoAnimado {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  50% {
+    background-position: 100% 0, 0% 100;
+  }
+  100% {
+    background-position: 0 0, 0 0;
+  }
+
+}
+h1 {
+  font-family: "Antonio", sans-serif;
+  color: rgb(134, 14, 145);
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  align-items: center;
+  gap: 2rem;
+  padding: 3% 10%;
+}
+.titulo-principal {
+  width: 500px; 
+  font-size: 4.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+}
+body {
+  background-color: #1a1a1a;
+  background-image: url("calça.jpg");
+  background-repeat: repeat-x, repeat-x;
+  animation: FundoAnimado 3s linear infinite;
+}
+.cabeçalho{
+padding: 5% 15%;
+gap: 2rem;
+}
+.sis1 {
+  color: rgb(134, 14, 145);
+  padding: 0% 10%;
+  font-size: 1.5rem;
+}
+.botao {
+    color: rgb(134, 14, 145);
+    transition: 1.5s easeInOutBounce;
+    border: 2px solid rgb(134, 14, 145);
+    text-decoration: none;
+    padding: 1% 3%;
+    
+
+}
+.botao:hover {
+  border: 2px solid rgb(216, 48, 231);
+  color:rgb(216, 48, 231);
+}
+
+.texto2 {
+  color:  rgb(134, 14, 145);
+  padding: 3% 10%;
+}
+.logo{
+    max-width: 600px;
+    padding: 0% 19%;
+}
+.conteudo{
+  padding: 0% 10%;
+}
+
+.sites-titulo{
+  color:  rgb(134, 14, 145);
+  padding: 0% 1%;
+  margin-top: 0.2rem;
+}
+.sites{
+  margin-top: 0.2rem;
+  padding: 0% 1%;
+}

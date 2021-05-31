@@ -1,16 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap");
-@keyframes FundoAnimado {
-  0% {
-    background-position: 0 0, 0 0;
-  }
-  50% {
-    background-position: 100% 0, 0% 100;
-  }
-  100% {
-    background-position: 0 0, 0 0;
-  }
-
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
+
 h1 {
   font-family: "Antonio", sans-serif;
   color: rgb(134, 14, 145);
@@ -28,10 +21,8 @@ h1 {
   
 }
 body {
-  background-color: #1a1a1a;
-  background-image: url("calça.jpg");
-  background-repeat: repeat-x, repeat-x;
-  animation: FundoAnimado 3s linear infinite;
+  background-color: #1b1b1b;
+  
 }
 .cabeçalho{
 padding: 5% 15%;
@@ -42,20 +33,71 @@ gap: 2rem;
   padding: 0% 10%;
   font-size: 1.5rem;
 }
+@keyframes botão {
+
+  0% {
+   transform:rotate(0);
+  }
+  25% {
+    transform:rotate(0.5deg);
+  }
+  50% {
+    transform:rotate(0);
+  }
+  75% {
+    transform:rotate(-0.5deg);
+  }
+  100% {
+    transform:rotate(0);
+  }
+  
+}
+@keyframes botão2 {
+
+  0% {
+   transform:rotatex(0);
+  }
+  25% {
+    transform:rotatex(90deg);
+  }
+  50% {
+    transform:rotatex(180deg);
+  }
+  75% {
+    transform:rotatex(270deg);
+  }
+  100% {
+    transform:rotatex(360deg);
+  }
+}
+@keyframes botão3 {
+
+  0% {
+   transform:rotatex(0);
+  }
+  50% {
+    transform:rotatex(180deg);
+  }
+  100% {
+    transform:rotatex(0);
+  }
+}
 .botao {
     color: rgb(134, 14, 145);
-    transition: 1.5s easeInOutBounce;
+    transition:all 5s easeInOutBounce;
     border: 2px solid rgb(134, 14, 145);
     text-decoration: none;
     padding: 1% 3%;
-    
+    box-shadow: 0 2px 3px rgb(134, 14, 145);
 
 }
 .botao:hover {
   border: 2px solid rgb(216, 48, 231);
-  color:rgb(216, 48, 231);
-}
+  color:rgb(216, 48, 231);  
+  background-color: #2b2a2a;
+  transition:background-color .5s ;
 
+}
 .texto2 {
   color:  rgb(134, 14, 145);
   padding: 3% 10%;
@@ -76,4 +118,37 @@ gap: 2rem;
 .sites{
   margin-top: 0.2rem;
   padding: 0% 1%;
+} 
+.link-site1{
+  margin-top: 0.2rem;
+  padding: 2% 1%;
+}
+.link-site1:hover{
+  animation-name: botão;
+  animation-delay: .1s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1
+}
+.link-site2{
+  margin-top: 0.2rem;
+  padding: 2% 1%;
+}
+.link-site2:hover{
+  animation-name: botão2;
+  animation-delay: .1s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1
+}
+.link-site3{
+  margin-top: 0.2rem;
+  padding: 2% 0%;
+}
+.link-site3:hover{
+  animation-name: botão3;
+  animation-delay: .1s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1
 }
